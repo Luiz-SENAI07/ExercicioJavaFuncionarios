@@ -25,7 +25,7 @@ public class consultor extends funcionario{
     @Override 
     public void exibirDados(){
         System.out.println("Nome: " + this.getNome());
-        System.out.println("Cargo: " + this.getClass());
+        System.out.println("Cargo: " + this.getClass().getSimpleName());
         
         DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy 'às' HH:mm");
 
